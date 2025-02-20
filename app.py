@@ -11,7 +11,7 @@ app = Flask(__name__)
 app.config["SECRET_KEY"] = "here_this_is_the_updated_secret_key"
 
 model = joblib.load("model.joblib")
-
+# This is now the optimized version of the code 
 @app.route("/")
 @app.route("/home")
 def home():
